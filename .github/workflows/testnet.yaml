@@ -39,7 +39,7 @@ jobs:
       ecr-repo-aws-region: ${{ steps.set-aws-info.outputs.ecr-repo-aws-region }}
     steps:
       - name: Extract repo name
-        id: extract-repo-name
+        id: extract-repo-name 
         run: |
           REPO_NAME="${{ github.repository }}"
           SHORT_NAME=${REPO_NAME##*/}
